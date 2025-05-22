@@ -1,0 +1,9 @@
+---
+
+【会话总结】
+
+• 主要目的：将本地"三千大作业"文件夹通过SSH方式与GitHub仓库（git@github.com:Sumouren1/sanqiandazuoye.git）建立稳定连接并上传最新代码。
+• 完成的主要任务：将远程仓库地址切换为SSH方式，并成功推送本地main分支的全部内容到GitHub远程仓库。
+• 关键决策和解决方案：遇到HTTPS推送失败后，采用SSH方式连接远程仓库，确保上传过程稳定顺利。
+• 使用的技术栈：Git、GitHub（SSH协议）、PowerShell。
+• 修改了哪些文件：本地.git仓库元数据（远程地址变更），Readme（追加会话总结）。 
