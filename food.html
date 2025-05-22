@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>家乡美食文化 - 美食介绍</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">家乡美食文化</div>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="food.html" class="active">美食介绍</a></li>
+                <li><a href="contact.html">联系我们</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 主标题区域 -->
+    <header class="main-header">
+        <div class="container">
+            <h1>家乡特色美食介绍</h1>
+            <p>了解更多家乡地道美食，感受文化魅力</p>
+        </div>
+    </header>
+
+    <!-- 锅包肉介绍 -->
+    <section class="section">
+        <div class="container">
+            <div class="food-showcase">
+                <h2>锅包肉</h2>
+                <div class="food-images">
+                    <div class="food-img-item">
+                        <img src="images/food1.jpg" alt="锅包肉">
+                        <span class="author-info">制作者：柴怡琳 2422874</span>
+                    </div>
+                </div>
+                <div class="food-table-wrapper">
+                    <table class="food-table">
+                        <thead>
+                            <tr>
+                                <th>主要原料</th>
+                                <th>口味</th>
+                                <th>推荐指数</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>猪里脊、淀粉、葱姜蒜</td>
+                                <td>酸甜酥脆</td>
+                                <td>★★★★★</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p>锅包肉是东北著名的传统菜肴，外酥里嫩，酸甜适口，是家乡餐桌上的经典美味。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 美食投票区域 -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">美食投票区</h2>
+            <div class="food-list">
+                <!-- 北京烤鸭 -->
+                <div class="food-item">
+                    <h3>北京烤鸭</h3>
+                    <p>皮酥肉嫩，配以甜面酱和薄饼，是北京最著名的传统美食</p>
+                    <div class="food-item-footer">
+                        <button class="vote-btn" data-food="beijingkaoya">投票</button>
+                        <div class="vote-info">
+                            <span class="vote-count" id="beijingkaoya-count">0</span><span>票</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 兰州拉面 -->
+                <div class="food-item">
+                    <h3>兰州拉面</h3>
+                    <p>手工拉制，汤清面筋，配以牛肉和香菜，是西北特色面食</p>
+                    <div class="food-item-footer">
+                        <button class="vote-btn" data-food="lanzhou">投票</button>
+                        <div class="vote-info">
+                            <span class="vote-count" id="lanzhou-count">0</span><span>票</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 西湖醋鱼 -->
+                <div class="food-item">
+                    <h3>西湖醋鱼</h3>
+                    <p>杭州名菜，鱼肉鲜嫩，酸甜可口，是江南菜系的代表</p>
+                    <div class="food-item-footer">
+                        <button class="vote-btn" data-food="xihucuyu">投票</button>
+                        <div class="vote-info">
+                            <span class="vote-count" id="xihucuyu-count">0</span><span>票</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 重庆火锅 -->
+                <div class="food-item">
+                    <h3>重庆火锅</h3>
+                    <p>麻辣鲜香，食材丰富，是川菜中最具代表性的美食之一</p>
+                    <div class="food-item-footer">
+                        <button class="vote-btn" data-food="chongqing">投票</button>
+                        <div class="vote-info">
+                            <span class="vote-count" id="chongqing-count">0</span><span>票</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 西安肉夹馍 -->
+                <div class="food-item">
+                    <h3>西安肉夹馍</h3>
+                    <p>外酥里嫩，肉香四溢，是陕西特色小吃</p>
+                    <div class="food-item-footer">
+                        <button class="vote-btn" data-food="xian">投票</button>
+                        <div class="vote-info">
+                            <span class="vote-count" id="xian-count">0</span><span>票</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 云南过桥米线 -->
+                <div class="food-item">
+                    <h3>云南过桥米线</h3>
+                    <p>汤鲜味美，配料丰富，是云南特色美食</p>
+                    <div class="food-item-footer">
+                        <button class="vote-btn" data-food="yunnan">投票</button>
+                        <div class="vote-info">
+                            <span class="vote-count" id="yunnan-count">0</span><span>票</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 广东早茶 -->
+                <div class="food-item">
+                    <h3>广东早茶</h3>
+                    <p>点心精致，品种丰富，是粤式饮食文化的代表</p>
+                    <div class="food-item-footer">
+                        <button class="vote-btn" data-food="guangdong">投票</button>
+                        <div class="vote-info">
+                            <span class="vote-count" id="guangdong-count">0</span><span>票</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 排行榜区域 -->
+            <div class="ranking-section">
+                <h2>美食排行榜</h2>
+                <ul id="ranking-list"></ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 家乡美食文化 | 设计与制作：柴怡琳 2422874</p>
+            <p>如有建议，欢迎<a href="mailto:example@email.com">邮件反馈</a></p>
+        </div>
+    </footer>
+
+    <!-- 投票功能内联脚本 -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('投票功能初始化...');
+            
+            // 初始化票数
+            function initVotes() {
+                var foods = [
+                    {key: 'beijingkaoya', name: '北京烤鸭'},
+                    {key: 'lanzhou', name: '兰州拉面'},
+                    {key: 'xihucuyu', name: '西湖醋鱼'},
+                    {key: 'chongqing', name: '重庆火锅'},
+                    {key: 'xian', name: '西安肉夹馍'},
+                    {key: 'yunnan', name: '云南过桥米线'},
+                    {key: 'guangdong', name: '广东早茶'}
+                ];
+                
+                // 显示每个食物的票数
+                foods.forEach(function(food) {
+                    var count = localStorage.getItem('vote_' + food.key) || 0;
+                    var countSpan = document.getElementById(food.key + '-count');
+                    if (countSpan) {
+                        countSpan.textContent = count;
+                    }
+                });
+                
+                // 更新排行榜
+                updateRanking(foods);
+                
+                // 绑定投票按钮点击事件
+                document.querySelectorAll('.vote-btn').forEach(function(btn) {
+                    btn.addEventListener('click', function() {
+                        var foodKey = this.getAttribute('data-food');
+                        var currentVotes = parseInt(localStorage.getItem('vote_' + foodKey) || 0);
+                        var newVotes = currentVotes + 1;
+                        
+                        // 更新localStorage
+                        localStorage.setItem('vote_' + foodKey, newVotes);
+                        
+                        // 更新显示
+                        var countSpan = document.getElementById(foodKey + '-count');
+                        if (countSpan) {
+                            countSpan.textContent = newVotes;
+                        }
+                        
+                        // 重新生成排行榜
+                        updateRanking(foods);
+                        
+                        // 动画效果
+                        btn.classList.add('voted');
+                        setTimeout(function() {
+                            btn.classList.remove('voted');
+                        }, 500);
+                        
+                        console.log(foodKey + ' 投票成功，当前票数：' + newVotes);
+                    });
+                });
+            }
+            
+            // 更新排行榜函数
+            function updateRanking(foods) {
+                // 获取所有食物的票数信息
+                var foodVotes = foods.map(function(food) {
+                    return {
+                        key: food.key,
+                        name: food.name,
+                        count: parseInt(localStorage.getItem('vote_' + food.key) || 0)
+                    };
+                });
+                
+                // 按票数排序
+                foodVotes.sort(function(a, b) {
+                    return b.count - a.count;
+                });
+                
+                // 生成排行榜
+                var rankingList = document.getElementById('ranking-list');
+                if (rankingList) {
+                    rankingList.innerHTML = '';
+                    
+                    foodVotes.forEach(function(food, idx) {
+                        var li = document.createElement('li');
+                        li.textContent = (idx + 1) + '. ' + food.name + '：' + food.count + '票';
+                        
+                        // 第一名加粗显示
+                        if (idx === 0 && food.count > 0) {
+                            li.style.color = 'var(--primary-color)';
+                            li.style.fontWeight = 'bold';
+                        }
+                        
+                        rankingList.appendChild(li);
+                    });
+                }
+            }
+            
+            // 执行初始化
+            initVotes();
+
+            // 导航栏滚动效果
+            window.addEventListener('scroll', function() {
+                var navbar = document.querySelector('.navbar');
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

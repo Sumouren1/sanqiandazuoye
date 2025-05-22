@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>家乡美食文化 - 首页</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">家乡美食文化</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">首页</a></li>
+                <li><a href="food.html">美食介绍</a></li>
+                <li><a href="contact.html">联系我们</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 首页主内容 -->
+    <header class="main-header">
+        <div class="container">
+            <h1>探索家乡美食的魅力</h1>
+            <p>品味地道美食，感受文化传承</p>
+            <a href="food.html" class="btn btn-main">了解更多美食</a>
+        </div>
+    </header>
+
+    <!-- 特色美食推荐 -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">特色美食推荐</h2>
+            <div class="food-showcase">
+                <div class="food-table-wrapper">
+                    <table class="food-table">
+                        <thead>
+                            <tr>
+                                <th>美食名称</th>
+                                <th>特色</th>
+                                <th>推荐指数</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>锅包肉</td>
+                                <td>香辣可口，传统工艺</td>
+                                <td>★★★★★</td>
+                            </tr>
+                            <tr>
+                                <td>小笼包</td>
+                                <td>色香味俱佳，营养丰富</td>
+                                <td>★★★★☆</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="food-images">
+                    <div class="food-img-item">
+                        <a href="https://m.dianping.com/shop/1646682669?msource=applemaps" target="_blank">
+                            <img src="images/food1.jpg" alt="家乡美食1">
+                            <span class="author-info">制作者：柴怡琳 2422874</span>
+                        </a>
+                    </div>
+                    <div class="food-img-item">
+                        <a href="https://m.dianping.com/ugcdetail/757140621" target="_blank">
+                            <img src="images/food2.jpg" alt="家乡美食2">
+                            <span class="author-info">制作者：柴怡琳 2422874</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 社交媒体分享按钮 -->
+    <section class="share-section">
+        <div class="container">
+            <h3>分享至社交媒体</h3>
+            <div class="share-buttons">
+                <a href="#" class="share-btn wechat">微信</a>
+                <a href="#" class="share-btn weibo">微博</a>
+                <a href="#" class="share-btn qq">QQ</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 家乡美食文化 | 设计与制作：柴怡琳 2422874</p>
+            <p>如有建议，欢迎<a href="mailto:example@email.com">邮件反馈</a></p>
+        </div>
+    </footer>
+
+    <!-- JS脚本 -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // 导航栏滚动效果
+            window.addEventListener('scroll', function() {
+                var navbar = document.querySelector('.navbar');
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+
+            // 社交分享按钮点击事件
+            document.querySelectorAll('.share-btn').forEach(function(btn) {
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    var platform = this.textContent.trim();
+                    alert('请在' + platform + '中手动分享本页面链接！');
+                });
+            });
+        });
+    </script>
+</body>
+</html> 
